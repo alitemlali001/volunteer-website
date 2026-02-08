@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Volunteer Chat Room</h2>
+<div id="chat-box" style="border:1px solid #ccc; padding:10px; height:300px; overflow-y:scroll;">
+  {% for msg in messages %}
+    <p><strong>{{ msg['name'] }}:</strong> {{ msg['content'] }} 
+    <small>({{ msg['timestamp'] }})</small></p>
+  {% endfor %}
+</div>
+
+<form method="post">
+  <input type="text" name="message" placeholder="Type message..." required>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  setInterval(() => { location.reload(); }, 5000); // auto-refresh every 5s
+</script>
+{% endblock %}
