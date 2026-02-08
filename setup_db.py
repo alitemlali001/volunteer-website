@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS users (
 )
 ''')
 
+
 # Shifts table
 c.execute('''
 CREATE TABLE IF NOT EXISTS shifts (
