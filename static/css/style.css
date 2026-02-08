@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+nav a:hover {
+    color: #004999;
+}
+
+input[type=text], input[type=password] {
+    padding: 8px;
+    margin: 5px 0;
+    width: 250px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004999;
+}
